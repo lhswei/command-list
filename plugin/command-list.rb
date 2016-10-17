@@ -118,7 +118,12 @@ CommandList::register_list(
 	  :map		   => 'c',
 	  :text        => '[c]lean bundle',
 	},
+	{
+	  :function    => ":PluginList",
+	  :map		   => 'l',
+	  :text        => '[l]ist bundle',
 
+	}
   ]
 )
 
@@ -150,3 +155,17 @@ CommandList::register_list(
     },
   ]
 )
+CommandList::register_list(
+  :name  => 'lookupfile',
+  :map   =>'<LEADER>l',
+  :map_item_with_list => true,
+  :items => [
+	{
+	  :function    => ':listmaps',
+	  :map         => 'm',
+	  :text        => '[m]map list',
+	}
+  ]
+)
+
+
