@@ -7,4 +7,7 @@ ruby << EOF
       require "#{path}/plugin/command-list.rb"
     end
   end
+  if File.exist?("~/.vim/ruby")
+	require "~/.vim/ruby/command-list.rb"
+  end
 EOF
