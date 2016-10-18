@@ -10,4 +10,7 @@ ruby << EOF
   if File.exist?("/root/.vim/ruby")
 	require "/root/.vim/ruby/command-list.rb"
   end
+   if File.exist?("/home/luhengsi/.vim/ruby")
+	require "/home/luhengsi/.vim/ruby/command-list.rb"
+  end
 EOF
